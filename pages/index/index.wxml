@@ -1,0 +1,10 @@
+<view class="container">
+  <view bindtap="click">{{t}}</view>
+  <view wx:for="{{num}}" wx:for-item="item" wx:key="*this">
+   {{item}}
+  </view>
+  <view>
+    <import src="../page1/page1.wxml"></import>
+    <template is="p1"></template>
+  </view>
+</view>

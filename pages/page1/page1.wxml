@@ -1,0 +1,15 @@
+<view wx:for="{{arr}}" wx:for-item="i">{{index}}---{{i}}</view>
+<view wx:if="{{arr[1] == 'qws'}}">if</view>
+<map name="asd"></map>
+
+<impor src="../page2/page2.wxml"></impor>
+<template name="p1">
+  
+  <template is="p2"></template>
+  <include src="../page2/page2.wxml"></include>
+  <text>p1</text>
+</template>
+
+<template is="p1">
+  
+</template>
