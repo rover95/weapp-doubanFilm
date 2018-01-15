@@ -1,10 +1,15 @@
-<view class="container">
-  <view bindtap="click">{{t}}</view>
-  <view wx:for="{{num}}" wx:for-item="item" wx:key="*this">
-   {{item}}
-  </view>
+<scroll-view>
+  <view class="page-title">豆瓣评分TOP250</view>
   <view>
-    <import src="../page1/page1.wxml"></import>
-    <template is="p1"></template>
+    <view class="file-row" wx:for="{{topData}}" wx:key="item.id" film-id="item.id">
+      <image src="{{item.images.small}}"></image>
+      <view class="film.info">
+        <text class="row-title">{{item.title}}</text>
+        <text class="row-genres">类型：{{item.genres}}</text>
+        <text class="row-year">年代：{{item.year}}</text>
+        <text class="row-No">No.{{item.No}}</text>
+      </view>
+      <text class="film-rating">{{item.rating.average}}</text>
+    </view>
   </view>
-</view>
+</scroll-view>

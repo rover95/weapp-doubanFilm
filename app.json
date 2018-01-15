@@ -1,32 +1,39 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/hot/hot",
+    "pages/select/select",
     "pages/page2/page2",
     "pages/page1/page1"
   ],
   "window": {
-    "navigationBarTitleText": "Demo",
+    "navigationBarTitleText": "豆瓣电影排名",
     "backgroundColor": "#159",
     "enablePullDownRefresh": true,
-    "navigationBarBackgroundColor": "#ff5500"
+    "navigationBarBackgroundColor": "#115599"
   },
   "tabBar": {
     "position": "bottom",
     "list": [{
       "pagePath": "pages/index/index",
-      "iconPath": "test.png",
-      "selectedIconPath": "test.png",
-      "text": "首页"
+      "iconPath": "data/icon/top.png",
+      "selectedIconPath": "data/icon/top-active.png",
+      "text": "TOP"
+    }, {
+      "pagePath": "pages/hot/hot",
+      "iconPath": "data/icon/film.png",
+      "selectedIconPath": "data/icon/film-active.png",
+      "text": "热映"
+    }, {
+      "pagePath": "pages/select/select",
+      "iconPath": "data/icon/select.png",
+      "selectedIconPath": "data/icon/select-active.png",
+      "text": "搜索"
     }, {
       "pagePath": "pages/page1/page1",
-      "iconPath": "wx.png",
-      "selectedIconPath": "wx.png",
-      "text": "猰貐"
-    }, {
-      "pagePath": "pages/page2/page2",
-      "iconPath": "wx.png",
-      "selectedIconPath": "wx.png",
-      "text": "睚眦"
+      "iconPath": "data/icon/test.png",
+      "selectedIconPath": "data/icon/test-active.png",
+      "text": "测试"
     }]
   },
   "networkTimeout": {
