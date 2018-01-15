@@ -1,7 +1,7 @@
 <scroll-view>
-  <view class="page-title">豆瓣评分TOP250</view>
+  <view class="page-title">豆瓣电影TOP250</view>
   <view>
-    <view class="file-row" wx:for="{{topData}}" wx:key="item.id" film-id="item.id">
+    <navigator class="file-row" wx:for="{{topData}}" wx:key="item.id" url="../film/film?id={{item.id}}">
       <image src="{{item.images.small}}"></image>
       <view class="film.info">
         <text class="row-title">{{item.title}}</text>
@@ -10,6 +10,6 @@
         <text class="row-No">No.{{item.No}}</text>
       </view>
       <text class="film-rating">{{item.rating.average}}</text>
-    </view>
+    </navigator>
   </view>
 </scroll-view>

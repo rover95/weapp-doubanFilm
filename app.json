@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/hot/hot",
+    "pages/film/film",
     "pages/select/select",
     "pages/page2/page2",
     "pages/page1/page1"

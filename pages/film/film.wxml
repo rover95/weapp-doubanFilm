@@ -1,1 +1,4 @@
-<view>this is film</view>
+<scroll-view>
+  <image src="{{filmData.images.medium}}"></image>
+  <view>{{filmData.title}}</view>
+</scroll-view>
