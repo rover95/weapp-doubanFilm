@@ -1,3 +1,70 @@
 view,text{
   font-family: 'Microsoft Yahei', STXihei, Tahoma, Geneva, Verdana, sans-serif
 }
+
+.text-center{
+  text-align: center;
+}
+.fs10{
+  font-size: 10px;
+}
+.fs12{
+  font-size: 12px;
+}
+.fs14{
+  font-size: 14px;
+}
+.fs16{
+  font-size: 16px;
+}
+.fs18{
+  font-size: 18px;
+}
+.fs20{
+  font-size: 20px;
+}
+
+.c-f70{
+  color: #ff7000;
+}
+.c-333{
+  color: #333;
+}
+.c-999{
+  color: #999;
+}
+.c-ccc{
+  color: #ccc;
+}
+.c-eee{
+  color: #eee;
+}
+.c-fff{
+  color: #fff;
+}
+
+.mt10{
+  margin-top: 10px;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mt30{
+  margin-top: 30px;
+}
+.mt40{
+  margin-top: 40px;
+}
+
+.pb10{
+  padding-bottom: 10px;
+}
+.pb20{
+  padding-bottom: 10px;
+}
+.pb50{
+  padding-bottom: 50px;
+}

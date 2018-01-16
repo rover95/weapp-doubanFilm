@@ -1,20 +1,25 @@
 .page-title{
   text-align: center;
   padding: 10px 0;
-  color: #ff5500;
+  color: #eee;
+  border-bottom: 1px solid #333;
+}
+.row-box{
+  background-color: #444;
 }
 .file-row{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-top: 1rpx solid #eee;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #333;
   padding: 15rpx 0;
 }
 .file-row > image{
   width: 60px;
   height: 90px;
   margin: 0 10px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 .film-info{
   flex:1;
@@ -22,23 +27,24 @@
 }
 .row-title{
   display: block;
-  color: #115599;
+  color: #fff;
+  font-size: 18px;
   padding-bottom: 8px;
 }
 .row-genres{
   display: block;
   font-size: 14px;
-  color: #555;
+  color: #bbb;
 }
 .row-year{
   display: block;
   font-size: 14px;
-  color: #555;
+  color: #bbb;
 }
 .row-No{
   display: block;
   font-size: 14px;
-  color: #ff5500;
+  color: #bbb;
 }
 .film-rating{
   position: absolute;
@@ -47,6 +53,14 @@
   text-align: center;
   font-size: 20px;
   font-weight: 700;
-  color: #ff5500;
+  color: #ff7000;
   margin: 0 20px;
 }
+
+
+
+
+
+
+
+

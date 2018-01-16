@@ -26,8 +26,21 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 1,
+			"list": [
+				{
+					"id": 0,
+					"name": "film",
+					"pathName": "pages/film/film",
+					"query": "id=3541415"
+				},
+				{
+					"id": -1,
+					"name": "hot",
+					"pathName": "pages/hot/hot",
+					"query": ""
+				}
+			]
 		}
 	}
 }

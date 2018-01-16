@@ -1,4 +1,40 @@
-<scroll-view>
-  <image src="{{filmData.images.medium}}"></image>
-  <view>{{filmData.title}}</view>
+<scroll-view wx:if="{{filmData.id}}" class="mbody">
+  <view class="bg-box">
+    <image class="bg-img" src="{{filmData.images.medium}}"></image>
+    <view class="bg-cover"></view>
+  </view>
+  <image class="poster" mode="widthFix" src="{{filmData.images.medium}}"></image>
+  <view class="film-info">
+    <view wx:if="{{filmData.title}}" class="title">{{filmData.title}} ({{filmData.year}})</view>
+    <view class="fs18 c-f70 text-center">{{filmData.rating.average}}</view>
+    <view class="info-row">
+        <text class="info-row-hb fs16">又名：</text>
+        <text class="fs12">{{info.aka}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-row-hb fs16">导演：</text>
+      <text class="fs12">{{info.directors}}</text>
+    </view>
+    <view class="info-row">
+      <text class="info-row-hb fs16">主演：</text>
+      <text class="fs12">{{info.casts}}</text>
+    </view>
+    <view class="info-row">
+        <text class="info-row-hb fs16">类型：</text>
+        <text class="fs12">{{info.genres}}</text>
+    </view>
+    <view class="info-row">
+        <text class="info-row-hb fs16">年代：</text>
+        <text class="fs12">{{filmData.year}}</text>
+    </view>
+    <view class="info-row">
+        <text class="info-row-hb fs16">国家：</text>
+        <text class="fs12">{{info.countries}}</text>
+    </view>
+    <view>
+      <text class="fs18 mt20 text-center">简介</text>
+      <view class="fs12 mt10 film-sumr">{{filmData.summary}}</view>
+    </view>
+  </view>
+  <view class="footer text-center">by @浪迹_RX</view>
 </scroll-view>

@@ -8,13 +8,16 @@
     "pages/page1/page1"
   ],
   "window": {
-    "navigationBarTitleText": "豆瓣电影排名",
-    "backgroundColor": "#159",
-    "enablePullDownRefresh": true,
-    "navigationBarBackgroundColor": "#115599"
+    "navigationBarTitleText": "看电影",
+    "backgroundColor": "#555",
+    "enablePullDownRefresh": false,
+    "navigationBarTextStyle":"#fff",
+    "navigationBarBackgroundColor": "#333"
   },
   "tabBar": {
     "position": "bottom",
+    "selectedColor": "#159",
+    "backgroundColor": "#333333",
     "list": [{
       "pagePath": "pages/index/index",
       "iconPath": "data/icon/top.png",
@@ -24,7 +27,7 @@
       "pagePath": "pages/hot/hot",
       "iconPath": "data/icon/film.png",
       "selectedIconPath": "data/icon/film-active.png",
-      "text": "热映"
+      "text": "北美"
     }, {
       "pagePath": "pages/select/select",
       "iconPath": "data/icon/select.png",

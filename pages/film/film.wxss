@@ -1,0 +1,67 @@
+.mbody{
+  background-color: #333; 
+  color: #eee;
+}
+.bg-box{
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+.bg-img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 110vw;
+  height: 140vw;
+  filter: blur(5px);
+}
+.bg-cover{
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 30vh;
+  background: linear-gradient(transparent,#333);
+}
+.poster{
+  display: block;
+  position: absolute;
+  top: 60vh;
+  left: 50%;
+  transform: translateX(-50%) translateY(-90%);
+  margin: 0 auto;
+  width: 60vw;
+  z-index: 8;
+  box-shadow: 15px 15px 25px rgba(0,0,0, 0.5)
+}
+.film-info{
+  padding: 0 20px;
+  margin-top: 10vh;
+  color: #ccc;
+}
+.info-row{
+  display: flex;
+  align-items: flex-start;
+  line-height: 24px;
+}
+.info-row-hb{
+  display: block;
+  width: 50px;
+  flex-shrink: 0;
+}
+text{
+  display: block;
+}
+.film-sumr{
+  line-height: 2;
+}
+.title{
+  text-align: center;
+  font-size: 24px;
+  color: #eee;
+}
+.footer{
+  font-size: 10px;
+  margin:20px 0 10px 0;
+  color: #aaa;
+}
