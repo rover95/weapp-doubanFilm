@@ -1,0 +1,4 @@
+<!--components/star/star.wxml-->
+<view class="star">
+  <image wx:for="{{itemClasses}}" src="{{item}}" class="star-item" wx:key="*this"></image>
+</view>

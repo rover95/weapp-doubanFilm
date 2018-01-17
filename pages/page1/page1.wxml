@@ -1,3 +1,4 @@
 <view>
   <include src="../page2/page2"></include>
+  <star score="8.1" />
 </view>

@@ -5,7 +5,8 @@
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light",
   "usingComponents": {
-    "film-row": "../../components/film-row/film-row"
+    "film-row": "../../components/film-row/film-row",
+    "star": "../../components/star/star"
   }
 
 }

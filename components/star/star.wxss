@@ -1,0 +1,11 @@
+.star{
+  font-size: 0;
+  text-align: center;
+  margin-top: 16px;
+}
+.star-item{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+}
