@@ -4,7 +4,6 @@ Page({
     searchInfo:''
   },
   inputChange: function(e){
-    console.log(e);
     this.setData({
       searchInfo:e.detail.value
     })

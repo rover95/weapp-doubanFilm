@@ -1,0 +1,59 @@
+
+.file-row{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #444;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #333;
+  padding: 15rpx 0;
+}
+.file-row > image{
+  width: 60px;
+  height: 90px;
+  margin: 0 10px;
+  border-radius: 2px;
+}
+.film-info{
+  flex:1;
+  align-self: flex-start;
+}
+.row-title{
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+.row-genres{
+  display: block;
+  font-size: 14px;
+  color: #bbb;
+}
+.row-year{
+  display: block;
+  font-size: 14px;
+  color: #bbb;
+}
+.row-No{
+  display: block;
+  font-size: 14px;
+  color: #bbb;
+}
+.film-rating{
+  position: absolute;
+  right: 0px;
+  width: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff7000;
+  margin: 0 20px;
+}
+
+
+
+
+
+
+
+

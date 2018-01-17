@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "film-row": "../../components/film-row/film-row"
+  }
+}

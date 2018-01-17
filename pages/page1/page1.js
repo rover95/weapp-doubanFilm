@@ -1,6 +1,7 @@
 Page({
   data: {
-    location:{}
+    location:{},
+    t: [14,51,48]
   },
   onLoad: function(){
     let _this = this;
@@ -10,6 +11,14 @@ Page({
         _this.setData({
           location: e
         })
+      }
+    })
+  },
+  change: function(){
+    var arr = this.data.t.push(15)
+    this.setData({
+      t:{
+        subjects: arr
       }
     })
   }

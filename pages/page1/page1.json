@@ -3,5 +3,9 @@
   "navigationBarTextStyle": "#ffffff",
   "navigationBarTitleText": "微信接口功能演示",
   "backgroundColor": "#eeeeee",
-  "backgroundTextStyle": "light"
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "film-row": "../../components/film-row/film-row"
+  }
+
 }

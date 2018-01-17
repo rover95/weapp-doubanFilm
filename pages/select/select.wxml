@@ -6,7 +6,7 @@
     
   </view>
   <view class="row-box">
-    <navigator wx:if="searchResource.length>0" class="file-row" wx:for="{{searchResource}}" wx:key="item.id" url="../film/film?id={{item.id}}">
+    <!-- <navigator wx:if="searchResource.length>0" class="file-row" wx:for="{{searchResource}}" wx:key="item.id" url="../film/film?id={{item.id}}">
       <image src="{{item.images.small}}"></image>
       <view class="film.info">
         <text class="row-title">{{item.title}}</text>
@@ -15,6 +15,7 @@
         <text class="row-No">No.{{item.No}}</text>
       </view>
       <text class="film-rating">{{item.rating.average}}</text>
-    </navigator>
+    </navigator> -->
+    <film-row filmData="{{searchResource}}"></film-row>
   </view>
 </scroll-view>
