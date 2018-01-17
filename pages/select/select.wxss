@@ -1,15 +1,26 @@
-.page-title{
-  position: relative;
+.mbody{
+  min-height: 100vh;
+  background-color: #444;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+.ipt-cell{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
-  font-size: 20px;
+  font-size: 0px;
   color: #ff7000;
   background: #333;
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
   box-shadow: 0 5px 15px #222;
   padding: 10px 0;
+  z-index: 9;
 }
-.page-title::before{
+.ipt-cell::before{
   display: block;
   position: absolute;
   top: 0px;
@@ -18,9 +29,22 @@
   position: absolute;
   border-top: 1px solid #555
 }
+.ipt{
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.ipt-icon{
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  line-height: 30px;
+}
 .row-box{
   background-color: #444;
-  min-height: 100vh;
 }
 .file-row{
   display: flex;

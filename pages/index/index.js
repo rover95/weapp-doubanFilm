@@ -48,7 +48,7 @@ function getFilm(_this) {
         pageNum: num,
         pageTitle: res.data.title
       })
-      wx.hideLoading()
+      wx.hideLoading();
     }
   }) 
 }

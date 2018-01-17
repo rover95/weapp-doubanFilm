@@ -1,9 +1,16 @@
 Page({
   data: {
-    t:"val of data",
-    arr: [15,'qws',411,'qxfee',{a:48}]
+    location:{}
   },
-  onLoad: function(o){
-    console.log(o)
+  onLoad: function(){
+    let _this = this;
+    wx.getLocation({
+      success: function(e){
+        console.log(e)
+        _this.setData({
+          location: e
+        })
+      }
+    })
   }
 })

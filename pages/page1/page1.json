@@ -1,6 +1,6 @@
 {
-  "navigationBarBackgroundColor": "#115599",
-  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#333",
+  "navigationBarTextStyle": "#ffffff",
   "navigationBarTitleText": "微信接口功能演示",
   "backgroundColor": "#eeeeee",
   "backgroundTextStyle": "light"

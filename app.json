@@ -9,14 +9,15 @@
   ],
   "window": {
     "navigationBarTitleText": "看电影",
-    "backgroundColor": "#555",
+    "backgroundColor": "#444",
     "enablePullDownRefresh": false,
     "navigationBarTextStyle":"#fff",
     "navigationBarBackgroundColor": "#333"
   },
   "tabBar": {
     "position": "bottom",
-    "selectedColor": "#159",
+    "color": "#ccc",
+    "selectedColor": "#ff7000",
     "backgroundColor": "#333333",
     "list": [{
       "pagePath": "pages/index/index",
@@ -30,14 +31,14 @@
       "text": "北美"
     }, {
       "pagePath": "pages/select/select",
-      "iconPath": "data/icon/select.png",
-      "selectedIconPath": "data/icon/select-active.png",
+      "iconPath": "data/icon/search.png",
+      "selectedIconPath": "data/icon/search-active.png",
       "text": "搜索"
     }, {
       "pagePath": "pages/page1/page1",
       "iconPath": "data/icon/test.png",
-      "selectedIconPath": "data/icon/test-active.png",
-      "text": "测试"
+      "selectedIconPath": "data/icon/test.png",
+      "text": "更多"
     }]
   },
   "networkTimeout": {

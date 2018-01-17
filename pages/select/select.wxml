@@ -1,0 +1,20 @@
+<scroll-view class="mbody">
+  <view class="ipt-cell">
+    
+    <icon type="search" size="20" class="ipt-icon" bindtap="goSearch"></icon>
+    <input type="text" placeholder="输入电影名或导演" bindconfirm="goSearch" confirm-type="search" bindinput="inputChange" class="ipt"/>
+    
+  </view>
+  <view class="row-box">
+    <navigator wx:if="searchResource.length>0" class="file-row" wx:for="{{searchResource}}" wx:key="item.id" url="../film/film?id={{item.id}}">
+      <image src="{{item.images.small}}"></image>
+      <view class="film.info">
+        <text class="row-title">{{item.title}}</text>
+        <text class="row-genres">类型：{{item.genres}}</text>
+        <text class="row-year">年代：{{item.year}}</text>
+        <text class="row-No">No.{{item.No}}</text>
+      </view>
+      <text class="film-rating">{{item.rating.average}}</text>
+    </navigator>
+  </view>
+</scroll-view>

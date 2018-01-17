@@ -4,6 +4,9 @@ Page({
   },
   onLoad: function(){
     let _this = this;
+    wx.showLoading({
+      title: '加载中...',
+    })
     wx.request({
       url: 'https://api.douban.com/v2/movie/us_box',
       methods: 'GET', 
@@ -12,9 +15,14 @@ Page({
       },
       success: function(res){
         console.log(res.data.subjects);
+        let arr = [];
+        for( let i = 0; i < 10; i++){
+          arr.push(res.data.subjects[i]);
+        }
         _this.setData({
-          filmData: res.data.subjects
+          filmData: arr
         });
+        wx.hideLoading();
       }
     })
   }

@@ -68,3 +68,7 @@ view,text{
 .pb50{
   padding-bottom: 50px;
 }
+
+.bg-444{
+  background-color: #444;
+}

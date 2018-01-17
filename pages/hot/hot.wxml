@@ -1,9 +1,9 @@
-<view-scroll>
+<view-scroll class="mbody">
   <view class="pageTitle">北美电影排行榜</view>
   <view-scroll class="film-box">
-    <view class="film-cell" wx:for="{{filmData}}" wx:for-item="item" wx:key="{{item.subject.id}}">
+    <navigator url="../film/film?id={{item.subject.id}}" class="film-cell" wx:for="{{filmData}}" wx:for-item="item" wx:key="{{item.subject.id}}">
       <image class="filmImg" src="{{item.subject.images.medium}}" ></image>
       <view class="filmTitle">{{item.subject.title}}</view>
-    </view>
+    </navigator>
   </view-scroll>
 </view-scroll>
