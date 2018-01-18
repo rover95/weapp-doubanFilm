@@ -7,6 +7,14 @@ Component({
     score: {
       type: Number,
       vlaue: 0
+    },
+    total: {
+      type: Number,
+      vlaue: 5
+    },
+    size: {
+      type: Number,
+      vlaue: 20
     }
   },
 
@@ -18,8 +26,7 @@ Component({
   },
   attached: function () {
     let res = [];
-    let score = this.properties.score/2;
-    console.log(score)
+    let score = this.properties.score/(this.properties.total/5);
     for (let i = 1; i <= 5; i++) {
       if (i <= score) {
         res.push('img/on.png');

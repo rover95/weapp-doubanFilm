@@ -36,7 +36,7 @@
   border-radius: 2px;
   height: 70vw;
   padding: 6px;
-  padding-bottom: 24px;
+  padding-bottom: 38px;
   background: #222;
   box-sizing: border-box;
   box-shadow: 6px 6px 8px #111;
@@ -46,7 +46,6 @@
   height: 100%;
 }
 .filmTitle{
-  height: 22px;
   line-height: 18px;
   /* position: relative;
   bottom: 30px; */
@@ -57,4 +56,12 @@
 	text-overflow:ellipsis; 
   white-space: nowrap; 
   /* background: rgba(0,0,0,0.4); */
+}
+.star-box{
+  height: 28px;
+  text-align: center;
+}
+.satr-cell{
+  display: inline-block;
+  margin-right: 5px;
 }

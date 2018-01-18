@@ -3,7 +3,15 @@
   <view-scroll class="film-box">
     <navigator url="../film/film?id={{item.subject.id}}" class="film-cell" wx:for="{{filmData}}" wx:for-item="item" wx:key="{{item.subject.id}}">
       <image class="filmImg" src="{{item.subject.images.medium}}" ></image>
-      <view class="filmTitle">{{item.subject.title}}</view>
+      <view class="filmTitle">
+        {{item.subject.title}}
+      </view>
+      <view class="star-box">
+          <view class="satr-cell">
+            <star score="{{item.subject.rating.average}}" total="{{item.subject.rating.max}}" size="10"/>
+          </view>
+          <text class="fs10 c-f70">{{item.subject.rating.average}}</text>
+      </view>
     </navigator>
   </view-scroll>
 </view-scroll>

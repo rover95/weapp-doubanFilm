@@ -1,4 +1,4 @@
 <!--components/star/star.wxml-->
 <view class="star">
-  <image wx:for="{{itemClasses}}" src="{{item}}" class="star-item" wx:key="*this"></image>
+  <image wx:for="{{itemClasses}}" src="{{item}}" class="star-item" wx:key="*this" style="width:{{size}}px; height:{{size}}px; margin-left:{{size/10}}px; margin-right:{{size/10}}px"></image>
 </view>

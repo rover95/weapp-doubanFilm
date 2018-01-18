@@ -4,7 +4,7 @@
     <text class="row-title">{{item.title}}</text>
     <text class="row-genres">类型：{{item.genres}}</text>
     <text class="row-year">年代：{{item.year}}</text>
-    <text class="row-No">No.{{item.No}}</text>
+    <text wx:if="{{item.No}}" class="row-No">No.{{item.No}}</text>
   </view>
-  <text class="film-rating">{{item.rating.average}}</text>
+  <text class="film-rating" wx:if="{{item.rating.average>0}}">{{item.rating.average}}</text>
 </navigator>

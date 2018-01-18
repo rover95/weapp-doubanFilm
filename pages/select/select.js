@@ -22,9 +22,6 @@ Page({
       success: function(res){
         console.log(res);
         let arr = res.data.subjects;
-        for(let i in arr){
-          arr[i].rating.average = (arr[i].rating.average == 0)? '无': arr[i].rating.average; 
-        }
         _this.setData({
           searchResource: arr
         });

@@ -65,3 +65,14 @@ text{
   margin:20px 0 10px 0;
   color: #aaa;
 }
+.satr-cell{
+  display: inline-block;
+  margin-right: 5px;
+}
+.scroe-cell{
+  display: inline-block;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ff7000;
+  vertical-align: top;
+}

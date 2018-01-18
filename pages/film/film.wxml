@@ -6,9 +6,11 @@
   <image class="poster" mode="widthFix" src="{{filmData.images.medium}}"></image>
   <view class="film-info">
     <view wx:if="{{filmData.title}}" class="title">{{filmData.title}} ({{filmData.year}})</view>
-    <view class="fs18 c-f70 text-center">
-      <star score="{{filmData.rating.average}}"/>  
-      <text>{{filmData.rating.average}}</text>
+    <view class="fs18 c-f70 mt10 mb20 text-center">
+      <view class="satr-cell">
+        <star score="{{filmData.rating.average}}" total="{{filmData.rating.max}}" size="20"/>  
+      </view>
+      <text class="scroe-cell">{{filmData.rating.average}}</text>
     </view>
     <view class="info-row">
         <text class="info-row-hb fs16">又名：</text>
