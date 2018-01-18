@@ -14,7 +14,11 @@ Page({
     })
     let _this = this;
     wx.request({
-      url: 'https://api.douban.com/v2/movie/search?q='+_this.data.searchInfo,
+      // url: 'https://api.douban.com/v2/movie/search?q='+_this.data.searchInfo,
+      url: 'http://localhost:8111',
+      data: {
+        url:'/v2/movie/search?q='+_this.data.searchInfo,
+      },
       methods: 'GET', 
       header: {
         'content-type': 'json' // 默认值
