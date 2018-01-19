@@ -3,22 +3,25 @@ var url=require('url');
 var querystring = require('querystring');
 
 http.createServer(function (request, response) {  
-    var pathUrl = url.parse(request.url, true).query;  
-    console.log(pathUrl.url);
+    var pathUrl = url.parse(request.url, true).query; 
+    var start = pathUrl.start ? ("?start="+pathUrl.start) : '';
+    var count = pathUrl.count ? ("&count="+pathUrl.count) : '';
     var content = ''; 
+    
     var opt = {  
          host:'api.douban.com',  
          port:'80',  
          method:'GET',  
-         path:pathUrl.url
+         path: encodeURI(pathUrl.url) + start + count
     };  
+    // console.log(opt.path)
     var req = http.request(opt, function(res) {  
-        res.on('data',function(body){  
-            console.log('return');  
+        res.on('data',function(body){ 
             content+=body;  
         }).on("end", function () {  
+            console.log(pathUrl.url )
             response.writeHead(200, {
-              'Content-Type': 'text/html',
+              'Content-Type': 'text/html;charset=utf-8',
               'Referer': 'http://www.google.com'
             });  
             response.write(content);  
@@ -28,5 +31,5 @@ http.createServer(function (request, response) {
         console.log("Got error: " + e.message);  
     });  
     req.end();  
-}).listen(8111);//监听端口80,将80端口的请求转发到news.163.com  
+}).listen(8111);
 console.log("Server runing at port: " + 8111 + ".");
