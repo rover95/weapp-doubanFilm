@@ -24,7 +24,8 @@ function getFilm(_this) {
     title: '加载中...',
   })
   wx.request({
-    url: 'https://api.douban.com/v2/movie/top250',
+    // url: 'https://api.douban.com/v2/movie/top250',
+    url: 'http://localhost:8111/mock-top.json',
     data: {
       start: _this.data.pageNum,
       count: 20

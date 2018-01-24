@@ -15,7 +15,8 @@ Page({
       title: '加载中...',
     })
     wx.request({
-      url:'https://api.douban.com/v2/movie/subject/' + param.id,
+      // url:'https://api.douban.com/v2/movie/subject/' + param.id,
+      url:'http://localhost:8111/mock-id.json',
       methods: 'GET', 
       header: {
         'content-type': 'json' // 默认值

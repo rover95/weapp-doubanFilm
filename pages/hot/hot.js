@@ -8,7 +8,8 @@ Page({
       title: '加载中...',
     })
     wx.request({
-      url: 'https://api.douban.com/v2/movie/us_box',
+      // url: 'https://api.douban.com/v2/movie/us_box',
+      url: 'http://localhost:8111/mock-us.json',
       methods: 'GET', 
       header: {
         'content-type': 'json' // 默认值
